@@ -1,15 +1,38 @@
 
-public class Etudiant {
-	private char NOM = CherkaouiOmari;
-	private char PRENOM = Mehdi;
-	private int MATRICULE = 2100180;
-	int NOTE;
+public class Student {
+
+	private String prenom;
+	private String nom;
+	private float[] notes;
+	private int conteur;
+	public Student(String prenom, String nom)
+	{
+		this.prenom = prenom;
+		this.nom = nom;
+		this.matricule = matricule;
+		this.notes = new float[10];
+		this.conteur = 0;
+	}
 	
-	public static void main(String[] args) {
-		Etudiant myObj = new Etudiant();
-		System.out.println(myObj.NOM);
-		System.out.println(myObj.PRENOM);
-		System.out.println(myObj.MATRICULE);
+	public void ajouter_note(float note)
+	{
+		if (conteur < notes.length) { 
+            notes[conteur] = note;            
+            conteur++; 
+            System.out.println("la note est ajoutée");
+        } else {
+            System.out.println("erreur d'ajout, tableau des notes est plein ");
+        }
+	}
+	
+	public void retirer_note(float note)
+	{
+		
 	}
 
+			
+		
+
 }
+
+	
