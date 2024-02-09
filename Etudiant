@@ -1,0 +1,15 @@
+
+public class Etudiant {
+	private char NOM = CherkaouiOmari;
+	private char PRENOM = Mehdi;
+	private int MATRICULE = 2100180;
+	int NOTE;
+	
+	public static void main(String[] args) {
+		Etudiant myObj = new Etudiant();
+		System.out.println(myObj.NOM);
+		System.out.println(myObj.PRENOM);
+		System.out.println(myObj.MATRICULE);
+	}
+
+}
